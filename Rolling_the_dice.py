@@ -1,10 +1,11 @@
+#Importing modules
 import random
 import time
 
 roll_again = 'y'
 minimum = 1
 maximum = 6
-n = int(input("How many player : "))
+n = int(input("How many players : ")) #Taking input for number of players
 name = []
 for i in range(1, n+1):
     name1 = input("Player Name : ")
@@ -52,7 +53,7 @@ while roll_again in ('y', 'Y'):
             print("' 0 0 '")
             print("' 0 0 '")
             print("------")
-    roll_again = input("Rolling again (y/n): ")
+    roll_again = input("Roll again (y/n): ")
     if roll_again in ('n', 'N'):
         print("Thank You")
         break
